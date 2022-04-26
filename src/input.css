@@ -5,7 +5,7 @@
 
 /* ct = custom */
 .ct-topmenu-expanded{
-    @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDow;
+    @apply absolute top-10 z-50 w-full text-center bg-white ;
 }
 
 .ct-top-menu-item{
