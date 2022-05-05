@@ -509,6 +509,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 4rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .ml-16{
   margin-left: 4rem;
 }
@@ -537,6 +542,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -555,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-\[380px\]{
+  height: 380px;
 }
 
 .w-full{
@@ -677,6 +694,42 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\.\/img\/feature2\.jpeg\'\)\]{
   background-image: url('./img/feature2.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf1\.jpeg\'\)\]{
+  background-image: url('./img/cf1.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf2\.jpeg\'\)\]{
+  background-image: url('./img/cf2.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf3\.jpeg\'\)\]{
+  background-image: url('./img/cf3.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf4\.jpeg\'\)\]{
+  background-image: url('./img/cf4.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf5\.jpeg\'\)\]{
+  background-image: url('./img/cf5.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf6\.jpeg\'\)\]{
+  background-image: url('./img/cf6.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf7\.jpeg\'\)\]{
+  background-image: url('./img/cf7.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf8\.jpeg\'\)\]{
+  background-image: url('./img/cf8.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/cf9\.jpeg\'\)\]{
+  background-image: url('./img/cf9.jpeg');
 }
 
 .bg-cover{
@@ -1041,9 +1094,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
+  .sm\:ml-6{
+    margin-left: 1.5rem;
+  }
+
   .sm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
   }
 }
 
@@ -1066,6 +1133,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:justify-start{
