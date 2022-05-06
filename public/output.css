@@ -518,6 +518,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 4rem;
 }
 
+.ml-6{
+  margin-left: 1.5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -530,10 +534,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -542,12 +542,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .flex{
@@ -574,6 +578,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 380px;
 }
 
+.h-\[280px\]{
+  height: 280px;
+}
+
+.h-\[130px\]{
+  height: 130px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -584,8 +596,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
-.w-\[65\%\]{
-  width: 65%;
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .w-\[100px\]{
@@ -594,10 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[91\%\]{
   width: 91%;
-}
-
-.w-\[95\%\]{
-  width: 95%;
 }
 
 .max-w-screen-2xl{
@@ -620,6 +628,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 16.666667%;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
+.basis-2\/3{
+  flex-basis: 66.666667%;
+}
+
+.basis-1\/3{
+  flex-basis: 33.333333%;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -629,16 +649,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
   flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -657,12 +677,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-8{
   gap: 2rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .bg-orange-400{
@@ -732,6 +752,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/cf9.jpeg');
 }
 
+.bg-\[url\(\'\.\/img\/mg1\.jpeg\'\)\]{
+  background-image: url('./img/mg1.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/mg2\.jpeg\'\)\]{
+  background-image: url('./img/mg2.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/mg3\.jpeg\'\)\]{
+  background-image: url('./img/mg3.jpeg');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -783,6 +815,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.pl-8{
+  padding-left: 2rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -821,6 +857,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -843,6 +888,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-gray-500{
@@ -1094,10 +1143,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
-  .sm\:ml-6{
-    margin-left: 1.5rem;
-  }
-
   .sm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1105,12 +1150,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 }
 
@@ -1162,8 +1220,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px){
+  .xl\:w-\[65\%\]{
+    width: 65%;
+  }
+
   .xl\:px-96{
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .xl\:pl-14{
+    padding-left: 3.5rem;
+  }
+}
+
+@media (min-width: 480px){
+  .xs\:h-\[200px\]{
+    height: 200px;
   }
 }
