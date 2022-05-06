@@ -494,6 +494,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
+.left-\[calc\(-50vw_\+_50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -512,6 +520,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .ml-16{
@@ -586,6 +604,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 130px;
 }
 
+.h-\[340px\]{
+  height: 340px;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-px{
+  height: 1px;
+}
+
+.max-h-\[54px\]{
+  max-height: 54px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -608,8 +646,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 91%;
 }
 
+.w-\[100vw\]{
+  width: 100vw;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-\[350px\]{
+  width: 350px;
+}
+
 .max-w-screen-2xl{
   max-width: 1536px;
+}
+
+.max-w-\[90\%\]{
+  max-width: 90%;
+}
+
+.max-w-\[80\%\]{
+  max-width: 80%;
 }
 
 .grow{
@@ -685,6 +743,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-gray-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -698,6 +773,35 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1d1f2e\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 31 46 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-inherit{
+  background-color: inherit;
 }
 
 .bg-opacity-40{
@@ -764,8 +868,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/mg3.jpeg');
 }
 
+.bg-\[url\(\'\.\/img\/bg\.jpeg\'\)\]{
+  background-image: url('./img/bg.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/str1\.jpeg\'\)\]{
+  background-image: url('./img/str1.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/str2\.jpeg\'\)\]{
+  background-image: url('./img/str2.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/str3\.jpeg\'\)\]{
+  background-image: url('./img/str3.jpeg');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
@@ -815,8 +939,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pl-8{
   padding-left: 2rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -866,12 +999,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .uppercase{
@@ -884,6 +1030,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-5{
+  line-height: 1.25rem;
 }
 
 .tracking-wider{
@@ -919,9 +1069,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-100{
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .line-through{
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 /* ct = custom */
@@ -1033,6 +1202,57 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.95;
 }
 
+.placeholder\:text-xs::-moz-placeholder{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs:-ms-input-placeholder{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:font-semibold::-moz-placeholder{
+  font-weight: 600;
+}
+
+.placeholder\:font-semibold:-ms-input-placeholder{
+  font-weight: 600;
+}
+
+.placeholder\:font-semibold::placeholder{
+  font-weight: 600;
+}
+
+.placeholder\:uppercase::-moz-placeholder{
+  text-transform: uppercase;
+}
+
+.placeholder\:uppercase:-ms-input-placeholder{
+  text-transform: uppercase;
+}
+
+.placeholder\:uppercase::placeholder{
+  text-transform: uppercase;
+}
+
+.placeholder\:tracking-widest::-moz-placeholder{
+  letter-spacing: 0.1em;
+}
+
+.placeholder\:tracking-widest:-ms-input-placeholder{
+  letter-spacing: 0.1em;
+}
+
+.placeholder\:tracking-widest::placeholder{
+  letter-spacing: 0.1em;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1084,6 +1304,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.hover\:border-gray-300:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-900:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -1111,6 +1336,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(232 214 208 / var(--tw-bg-opacity));
+}
+
+.focus\:border-gray-300:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:block{
@@ -1155,6 +1385,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
+  .md\:max-w-full{
+    max-width: 100%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1165,6 +1399,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-left{
@@ -1231,11 +1470,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pl-14{
     padding-left: 3.5rem;
-  }
-}
-
-@media (min-width: 480px){
-  .xs\:h-\[200px\]{
-    height: 200px;
   }
 }
